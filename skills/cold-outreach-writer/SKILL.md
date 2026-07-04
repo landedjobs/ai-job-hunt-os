@@ -1,44 +1,45 @@
 ---
 name: cold-outreach-writer
-description: Write cold outreach that gets replies from hiring managers, founders, and engineers. Use when the user wants to message someone at a target company, ask for a referral, or reach a recruiter directly instead of applying into the void.
+description: Use when the user wants to message a hiring manager, founder, engineer, or recruiter at a target company, ask someone for a referral or advice, follow up on an application, or verify whether a posted role is actively interviewing.
 ---
 
 # Cold Outreach Writer
 
-You write messages that busy people answer. The bar: would a hiring manager with 200 unread messages reply to this one? Most cold outreach fails because it is about the sender. Good outreach leads with something useful or specific for the reader, asks for one small thing, and takes ten seconds to read.
+Write messages that busy people answer, and set honest expectations about the odds. The data: job portal applications get 0.1-2% response rates; targeted cold email to hiring managers gets 5-15%; and in an analysis of 8,000 recruiting messages, only 0.8% were genuinely personal, but those earned a 73% reply rate versus ~50% for everything else. The lesson is not "personalization helps." It is that almost nobody actually does it, so a genuinely specific note competes in a tiny pool. A handful of researched messages beats hundreds of portal applications.
 
 ## What you need
 
-1. Who the user wants to reach (name/role, or "help me pick the right person at company X").
-2. What they actually want: referral, direct consideration for a role, a 15-minute conversation, or intel.
-3. The user's one genuine connection point to this person or company: a post the person wrote, a product decision the user noticed, shared background, or the user's directly relevant work. If the user has none, help them find one before writing; a message with no specific hook is spam regardless of how well it is worded.
+1. Who to reach (name/role, or "help me pick the right person at company X").
+2. The actual goal: referral, direct consideration, a 15-minute conversation, intel, or verifying a posting is real.
+3. The user's one genuine connection point: a post the person wrote, a product decision the user noticed, shared background, or directly relevant work of the user's own. **If there is no connection point, stop and build one first**; a thoughtful comment on the person's recent post a few days before the DM changes the odds materially. A message with no specific hook is spam regardless of wording.
 
 ## Picking the target (when asked)
 
-- For a specific role: the hiring manager beats the recruiter beats HR. An engineer on the team is the best referral path.
-- Founders reply surprisingly often at companies under ~50 people. Above that, target the team lead.
-- Someone who posts publicly about their work is 5x easier to open honestly, because there is something real to respond to.
+The likely hiring manager beats the recruiter: recruiters run process, managers feel the pain of the unfilled seat. An engineer on the team is the best referral path. Founders reply surprisingly often under ~50 people; above that, target the team lead. Someone who posts publicly is 5x easier to open honestly, because there is something real to respond to.
 
-## Message anatomy
+## Message anatomy (every message, every channel)
 
-Every message, regardless of channel:
-1. **Open with the specific thing** (their post, their product, the exact problem their team is hiring for). Never open with the user's name and title; the reader does not care yet.
-2. **One line of proof**: the single most relevant thing the user has done, stated concretely ("built the eval pipeline for X, cut regression escapes 40%"), with a link if one exists.
-3. **One small ask**: "worth a 15-minute call?" or "would you point me to the right person?" Never "any opportunities?" and never a resume attachment on first contact.
-4. Under 120 words. On X/LinkedIn DM, under 80.
+1. **Specific connection first**: their post, their product, the exact problem their team is hiring for. Never open with the user's name and title; the reader does not care yet.
+2. **One line of proof**: the single most relevant thing the user has done, concrete, with a link if it exists. "Built an eval harness that caught 18% more citation failures" beats any adjective.
+3. **One low-friction ask**: advice beats referral on first contact ("would you point me at the right person?" / "worth 12 minutes?"). Never "any opportunities?" and never a resume attachment on first contact; it makes the note transactional.
+4. **50-75 words total.** More than half the words should be about the recipient or their team, not the sender. On X, under 50 words.
+
+When the real goal is checking a suspicious posting (high ghost risk from jd-decoder), the ask is simply: "Is this role actively interviewing?" Short, legitimate, and it converts uncertainty into information.
 
 ## Output format
 
-Write **three variants** with different angles (product-hook, mutual-context, direct-and-brief), then recommend one and say why. Adjust register per channel:
-- **LinkedIn DM**: shortest, no formalities.
-- **Email**: subject line included; make it specific and boring-good ("eval infra background, re: your agent reliability role"), never clever.
-- **X DM**: most casual, reference their public work.
+Write **three variants** with different angles (product-hook, mutual-context, direct-and-brief), then recommend one and say why. Channel register:
+- **Email**: include a subject line, specific and boring-good ("eval infra background, re: your agent reliability role"), never clever. Email has the best-measured odds.
+- **LinkedIn DM**: shortest, no formalities. Works best with visible shared context (alumni tie, mutual, recent post).
+- **X DM**: most casual; X is a relationship channel for people visibly active there, not a default application channel.
 
-Then include the **follow-up plan**: one nudge after 5-7 days, written fresh (add one new piece of information, do not "just bump this"), and then stop. Two messages total, ever. Also give the fallback: if no reply, who else to try or whether to apply through the front door.
+Then the **follow-up plan**: one nudge after 5-7 days that adds something new (a project link, a short teardown, a relevant update), never "just bumping this." Two messages total, ever. Include the fallback: who else to try, or apply through the front door.
+
+If the user is running a campaign, add a **tracking table**: persona, channel, message angle, proof asset, sent date, reply. Reply rates by cohort tell you what to fix; untracked outreach cannot be learned from.
 
 ## Hard rules
 
-- Never fabricate the connection point, inflate the proof line, or use flattery that could be pasted onto anyone ("love what you're building!").
-- No em dashes, no "I hope this finds you well," no "I'm reaching out because." Write like a person typing to another person.
-- Payload first: the reader should get something (a specific observation, a relevant reference) even if they never reply.
-- If the user's real goal is a referral from a stranger with zero connection points, tell them the reply rate will be very low and suggest building one first (a thoughtful comment on the person's post a few days before the DM changes the odds materially).
+- Never fabricate the connection point, inflate the proof line, or use flattery that pastes onto anyone ("love what you're building!").
+- No em dashes, no "I hope this finds you well," no "I'm reaching out because." Write like a person typing to a person.
+- Payload first: the reader should get something specific even if they never reply.
+- Set expectations honestly: most messages fail, including good ones. The strategy wins on the portfolio, not any single note.

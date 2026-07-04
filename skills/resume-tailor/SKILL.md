@@ -1,51 +1,50 @@
 ---
 name: resume-tailor
-description: Tailor a resume to a specific job description. Use when the user shares a job posting and wants their resume rewritten to match it, or asks why their applications get no responses.
+description: Use when the user wants to tailor a resume to a job description, convert experience into quantified bullets, improve how a resume parses and scans, fix a resume that gets no responses, or prepare resume evidence for AI-company applications.
 ---
 
 # Resume Tailor
 
-You rewrite resumes to match a specific job description without inventing anything. A tailored resume is not a different resume. It is the same true story told in the language the reader is scanning for.
+Rewrite resumes to match a specific job description without inventing anything. Two facts drive everything below. First, recruiters spend about 7.4 seconds on the initial scan (Ladders eye-tracking), reading name, current title and company, previous title, dates, and education. Second, the ATS is a searchable database, not a rejection bot: 92% of recruiters say ATS platforms do not auto-reject on formatting or content, and 99% of Fortune 500 companies use one to search and filter. So the job is: make the resume parseable, make the first scan land, and make every line survive a follow-up question.
 
-## What you need before starting
+## Before starting, collect
 
-1. The user's current resume (any format, pasted text is fine).
+1. The current resume.
 2. The full job description.
-3. Optional but valuable: 2-3 sentences from the user on what they actually did in their last role beyond what the resume says. Most resumes undersell; the raw material is usually in the person's head, not on the page.
+3. Ask: "Tell me 2-3 things you actually did in that role that aren't on the resume, especially anything with a number attached (scale, latency, cost, users, revenue, time saved)." Most resumes undersell; the raw material lives in the person's head.
 
-If you only have the resume and JD, proceed, but ask for the third item once you spot thin sections.
+Do not generate anything until you have at least items 1 and 2.
 
 ## Process
 
-### Step 1: Extract what the JD is actually screening for
-Read the job description and list, in order of emphasis:
-- Hard requirements (named tools, years, domains). Weight things mentioned in the first third of the JD or repeated more than once.
-- The problem behind the role: what is broken or missing on this team that made them open this req. It is usually visible in the responsibilities section.
-- Vocabulary: the exact terms they use. If they say "evals" do not write "quality assessment." If they say "agentic workflows" do not write "automation pipelines."
+### Step 1: Extract what the JD screens for
+List in order of emphasis: hard requirements (named tools, domains; weight what appears early or repeats), the problem behind the role (visible in the responsibilities), and the JD's exact vocabulary. If they say "evals," never write "quality assessment."
 
-### Step 2: Map evidence
-For each requirement, find the strongest evidence in the user's real experience. Three buckets:
-- **Direct hit**: they did exactly this. Lead with it.
-- **Adjacent**: they did something that exercises the same muscle. Reframe honestly ("built retrieval pipeline" is adjacent to "RAG experience").
-- **Gap**: no evidence. Never fabricate. Flag it and move on; gaps are handled in the cover letter or interview, not by lying on the resume.
+### Step 2: Map evidence into three buckets
+- **Direct hit**: they did exactly this. Leads the relevant section.
+- **Adjacent**: same muscle, different context. Reframe honestly.
+- **Gap**: no evidence. Flag it; never fill it with wording. Gaps are handled in the cover letter or interview, not by lying.
 
 ### Step 3: Rewrite
-- Reorder bullets so direct hits appear first under each role.
-- Rewrite each relevant bullet as: what they did, with what, and the measurable outcome. Cut bullets that serve no requirement in this JD.
-- Swap synonyms for the JD's exact vocabulary wherever it is truthful to do so.
-- Rewrite the summary (if present) to mirror the role title and top two requirements. If there is no summary and the user is changing domains, add a two-line one.
-- Keep it to the same length or shorter than the original. Tailoring adds relevance, not volume.
+- **Design the top third for the 7.4-second scan**: target-matching title language, strongest company or project, domain fit, and proof links must be visible before any dense detail.
+- **Every bullet becomes evidence, not adjectives**: use the XYZ pattern, "accomplished X, measured by Y, by doing Z." If Y is missing, ask for it; estimates marked with "~" are fine, invented numbers are not.
+- **Strip generic AI cadence**: 62% of employers say they are more likely to reject AI-generated resumes that lack personalization, and 78% specifically look for tailored detail. Phrases like "leveraged cutting-edge AI" get cut unless tied to a model, data, eval, or outcome the user actually touched.
+- **Keep it database-readable**: standard section headers, real dates, exact role nouns from the JD, no tables or graphics in the text flow.
+- **For AI roles, surface proof links**: GitHub, papers, demos, launches. Ask whether the linked repo shows tests, a clear README, and something deployed; a weak public repo is a risk, not an automatic plus.
+- Same length or shorter than the original. Tailoring adds relevance, not volume.
+
+### Step 4: Defensibility pass
+Read each rewritten bullet and ask: does this survive two follow-up questions about baselines, trade-offs, and what the user personally did? If not, weaken it or cut it. At AI-native companies every resume line becomes an interview thread.
 
 ## Output format
 
-Return three things, in this order:
-
 1. **The tailored resume**, full text, ready to paste.
-2. **Change log**: a short table of what moved, what was rewritten, and which JD requirement each change serves. This teaches the user the pattern so the next tailor takes them 10 minutes.
-3. **Gap list**: requirements with no evidence, each with a one-line suggestion (address in cover letter, learn before interview, or ignore because it reads as nice-to-have).
+2. **Change log**: what moved, what was rewritten, which JD requirement each change serves.
+3. **Gap list**: unmet requirements, each with a one-line plan (cover letter, pre-interview study, or ignore as wishlist).
+4. **Resume-to-interview map**: for each of the top 5 bullets, the most likely interview probe and what the user must be ready to say. This is where tailoring becomes interview prep.
 
-## Hard rules
+## Hard rules (apply at every step, no exceptions)
 
-- Never invent employers, titles, dates, tools, or outcomes. If a bullet cannot be supported by what the user told you, it does not go in.
-- Never inflate numbers. If the user has no metric, help them estimate honestly ("roughly how many requests per day did this serve?") and mark estimates as approximate ("~").
-- One resume per JD. If the user wants a generic resume, tell them that generic resumes are what got them here, and offer to tailor for their top target instead.
+- Never invent employers, titles, dates, tools, metrics, or outcomes. If the user cannot support a claim when you probe it, it does not go in. This mirrors what AI companies themselves ask of candidates: AI to sharpen true material, never to create experience.
+- If the truthful resume does not clear the role's bar, say so plainly and point at the gap. That is more useful than wording tricks.
+- One resume per JD. Generic resumes are what got the user here.

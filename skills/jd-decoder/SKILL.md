@@ -1,48 +1,56 @@
 ---
 name: jd-decoder
-description: Decode what a job description actually wants and whether it is worth applying. Use when the user shares a job posting and asks if they should apply, what it really means, or how to read between the lines.
+description: Use when the user shares a job posting and asks whether to apply, what the posting really means, whether a job is real or a ghost listing, what a salary band signals, or how to prioritize between several postings.
 ---
 
 # JD Decoder
 
-You translate job descriptions from company-speak into what the team actually needs, then give a clear apply / skip / stretch verdict. Job seekers waste most of their time applying to roles that were never a fit or were never real. Your job is to stop that.
+Treat every posting as a probabilistic signal, not a promise. Two base rates frame the work: Greenhouse classifies 18-22% of postings on its platform in any quarter as ghost jobs (positions not being actively filled), and in a 2024 ResumeBuilder survey 40% of hiring managers admitted their company posted a fake listing that year. Those are different instruments, so never quote them as one number; the takeaway is that most postings are real, a meaningful minority are not, and effort should follow the odds.
 
 ## Process
 
-### Step 1: Separate the JD into three piles
-- **Real requirements**: appear early, repeat, or connect directly to the responsibilities. These are screened for.
-- **Wishlist**: long comma-separated tool lists, "nice to have", anything that reads like it was pasted from a template. Candidates who match 100% of a wishlist do not exist and the hiring manager knows it.
-- **Boilerplate**: culture paragraphs, EEO text, perks. Skip unless something is unusual (an unusual perk or working-style line can be a genuine culture signal).
+### Step 1: Score ghost risk before anything else
+One point each (0-6):
 
-### Step 2: Decode the loaded phrases
-Translate the terms that carry hidden meaning. Examples of the pattern:
-- "Wear many hats" in a seed-stage post: no specialists, expect scope far beyond the title.
-- "Fast-paced environment" repeated: understaffed, ask about on-call and hours in the interview.
-- "0 to 1" or "founding": equity should be a real conversation; if the comp section is silent on equity, that is a question to ask.
-- "Experience with agentic workflows / evals / RAG in production": they have moved past demos and want someone who has debugged this stuff when it broke. A side project deployed for real users counts; a tutorial does not.
-- A very specific requirement ("experience migrating from LangChain to raw API calls"): they have that exact problem right now. If the user has done it, this is their opening line.
+1. Posted or reposted for 45+ days with no edits
+2. No named team, manager, or concrete problem; responsibilities read as template
+3. Not listed on the company's own careers page (job-board only)
+4. Company had layoffs in the last 6 months in this function
+5. No recruiter activity visible (no LinkedIn posts about the role, no outreach happening)
+6. Extremely wide or missing comp band with no explanation
 
-### Step 3: Read the seniority and comp signals
-- Years-of-experience ranges are soft. Two years of shipping production AI systems routinely beats five years adjacent. Say when the user should apply anyway.
-- If comp is posted, compare the band's width. A wide band ($150k-$260k) means the level is not decided; the interview determines where you land, and negotiation matters more.
-- If comp is missing, note what stage and location imply, and flag it as a question for the first screen, not a reason to skip.
+0-1: real, tailor deeply. 2-3: probably real, tailor moderately and verify. 4+: verify before investing; offer to draft a short note to the likely hiring manager asking "is this role actively interviewing?" That question is legitimate, cheap, and converts uncertainty into information. A repost alone is NOT proof of fake: budgets change, finalists fall through, some roles are evergreen.
 
-### Step 4: Verdict
-End with exactly one of:
-- **Apply now**: strong match on the real requirements. List the 2-3 evidence points to lead with.
-- **Stretch, apply anyway**: 60-80% match on real requirements and the gaps are learnable. Name the gaps and the one-line honest framing for each.
-- **Skip**: fundamental mismatch, ghost-job signals (reposted for months, vague responsibilities, no named team), or the decoded reality contradicts what the user wants. Say why in one sentence so they trust the next "apply" verdict.
+### Step 2: Classify every requirement
+Four piles: **must-have** (early, repeated, connected to responsibilities), **signal** (tells you the team's stack and pain), **nice-to-have** (long comma lists; candidates matching 100% of a wishlist do not exist and the hiring manager knows it), **compliance filler**. Tailor only to must-haves and signals.
+
+### Step 3: Translate loaded language into diligence questions, not verdicts
+Posting-language studies are weak evidence of anything, so convert phrases into interview questions instead of conclusions:
+- "Fast-paced" → "What changed in the last two quarters that created this role?"
+- "Wear many hats" → "Which three functions does this role own in the first 90 days?"
+- "0 to 1 / founding" → equity must be a real conversation; if the comp section is silent on it, that is a question.
+- A hyper-specific requirement ("migrating off LangChain") → they have that exact problem now; direct-hit evidence here is the user's opening line.
+- One role asking for research + infra + customer-facing + data + sales engineering → unicorn trap; the role is underscoped in their heads. Generate clarifying questions and lower the tailoring investment.
+
+### Step 4: Decode the comp band
+A very wide band ($50k+ spread) measurably lowers applicant trust when unexplained (Washington State University study), but the expert move is decoding, not avoiding: does it span multiple levels? Multiple geos? Is the top reachable for external hires? Flag which question applies and queue it for the screen. Band position also signals leveling; map level by scope (ownership, ambiguity, cross-functional impact), never by years alone. Years-of-experience lines are soft; two years shipping production AI regularly beats five adjacent, and you should say when the user should apply anyway.
+
+### Step 5: Verdict
+Exactly one of:
+- **Apply now**: strong match on must-haves, low ghost risk. List the 2-3 evidence points to lead with.
+- **Stretch, apply anyway**: 60-80% of must-haves and the gaps are learnable. Name each gap and its one-line honest framing.
+- **Verify first**: good match but ghost risk 4+. Provide the verification note.
+- **Skip**: fundamental mismatch or the decoded reality contradicts what the user wants. One sentence why, so the next "apply" verdict is trusted.
+
+Be willing to say skip; a decoder that always says apply is useless. But remember the base rates: most postings are real, and false negatives are expensive in a scarce market.
 
 ## Output format
 
-1. **What they actually need** (3-5 bullets, plain language, the problem behind the role)
-2. **Decoded phrases** (only the ones present in this JD, with translations)
-3. **Real requirements vs wishlist** (two short lists)
-4. **Signals**: seniority, comp read, any red or green flags
-5. **Verdict** with reasoning and, if applying, what to lead with
+1. Ghost-risk score with the checklist shown
+2. What they actually need (3-5 bullets, plain language)
+3. Must-haves vs wishlist (two short lists)
+4. Decoded phrases and the diligence questions they generate
+5. Comp band read + leveling estimate, with what to verify
+6. Verdict with reasoning
 
-## Hard rules
-
-- Be willing to say skip. A decoder that always says apply is useless.
-- Distinguish what the JD says from what you are inferring. Mark inferences as inferences.
-- If the user shares multiple JDs, rank them and say where to spend effort first.
+Label every inference as an inference. If the user shares multiple postings, rank them by (fit × ghost-risk-adjusted odds) and say where to spend this week's effort.

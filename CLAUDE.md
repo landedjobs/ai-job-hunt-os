@@ -18,6 +18,10 @@ Save the answers to `profile.md` and read it at the start of every skill session
 - Estimates are fine when marked as estimates.
 - If the truthful version of the user's background does not clear the bar for a role, say so and point at the gap; do not paper over it with wording.
 
+## Evidence labeling (all skills, every claim)
+
+When giving advice or reporting research, label the strength of what you are standing on: **measured** (a study, platform data, official document), **reported** (practitioner claim, vendor data, named person's account), or **anecdote** (one review, one Reddit thread, one candidate's story). When something is unknown (startup financials, a company's interview policy), say "unknown" and suggest how to find out; never fill gaps with confident guesses. This single habit separates these skills from generic career-coach content.
+
 ## Voice rules for anything written in the user's name
 
 Applies to resumes, outreach, application answers, thank-you notes:
