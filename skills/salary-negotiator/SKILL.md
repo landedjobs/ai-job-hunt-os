@@ -5,29 +5,14 @@ description: Use when the user receives an offer, is asked for salary expectatio
 
 # Salary Negotiator
 
-Prepare the user to negotiate calmly, specifically, and by level. The evidence says negotiating works: candidates who counter improve terms by about 12.45% on average (UCLA-summarized research), and the fear of rescission is real but overstated; documented cases exist, yet offers are not typically pulled for professional negotiation. People lose money in two moments: naming a number too early, and accepting within 24 hours. The scripts below get them through both. Full scripts per moment live in `references/negotiation-scripts.md`; load them when the user reaches that moment.
+Prepare the user to negotiate calmly, specifically, and by level. Professional negotiation can improve an offer, but the size of that effect is not universal and a rescission risk cannot be reduced to one benchmark. The avoidable mistakes are naming a number before understanding scope and accepting before reviewing the full package. The scripts below get users through both. Full scripts per moment live in `references/negotiation-scripts.md`; load them when the user reaches that moment.
 
-## Benchmarks: what AI-native roles pay
+## Benchmarks: source them for the actual offer
 
-Disclosed base ranges from AI-native job postings (US-posted, USD annual, midpoint of posted bands; source: landed.jobs database, 2,176 postings with disclosed comp, July 2026):
-
-| Role family | Median | 75th percentile | Sample |
-|---|---|---|---|
-| Research science | $238k | $288k | 58 |
-| AI/ML engineer | $232k | $274k | 582 |
-| Infra / DevOps | $225k | $251k | 46 |
-| DevRel | $220k | $238k | 25 |
-| Data science | $216k | $266k | 54 |
-| Software eng (AI-native co) | $215k | $249k | 677 |
-| Forward-deployed / solutions | $214k | $221k | 245 |
-| Security | $213k | $242k | 43 |
-| Product management | $210k | $248k | 243 |
-| Design | $202k | $238k | 23 |
-| Hardware / robotics | $200k | $242k | 116 |
-| Data engineering | $192k | $205k | 18 |
+Do not use a frozen table as “the market.” Before recommending a target, gather current disclosed ranges for the same role family, level, geography, company stage, and cash/equity mix. Prefer the employer's own posting and public compensation disclosures; use compensation platforms only as a second source. Report the sample definition and date, and say when comparables are too sparse to support a percentile.
 
 Calibration rules:
-- **The "AI premium" is level-specific and shrinking at the bottom**: entry-level AI engineers earned ~6.2% more than non-AI peers in 2025, down from 10.7% in 2024. Do not promise junior users a premium for the AI label. Real leverage lives in scarce evidence: evals, model infra, safety, deployment, GPU/cost optimization, measurable product impact.
+- **Do not promise an “AI premium.”** Any premium changes by level, geography, company, and market cycle. Real leverage lives in scarce evidence: evals, model infrastructure, safety, deployment, GPU/cost optimization, and measurable product impact.
 - **Level before number.** These bands blend mid through staff. Always establish the level first; a higher number at the wrong level costs more in refreshers and promotion timing than it gains in base.
 - Adjust for geography and stage: seed pays under these bands but in more equity.
 
@@ -41,7 +26,7 @@ One counter, specific, justified, warm: "Given [band data / competing process / 
 
 ## Startup equity: value mechanics, not share counts
 
-Never let the user value an offer from option count alone. Collect all of: shares granted AND fully diluted shares outstanding (refusal to share the denominator is itself a signal), strike price, latest 409A, last preferred price (the headline valuation is preferred stock; common is worth less), vesting and cliff, post-termination exercise window (90 days is still standard; some companies now extend to 10 years, ask), refresh policy, and **tender history**. Tender offers are now a real liquidity path while IPOs are scarce (61% of H1 2025 tenders were Series C+); a company that has run tenders has demonstrably more liquid paper than one that has not, at identical headline value. Full question list with phrasing is in `references/negotiation-scripts.md`.
+Never let the user value an offer from option count alone. Collect all of: shares granted AND fully diluted shares outstanding (refusal to share the denominator is itself a signal), strike price, latest 409A, last preferred price (the headline valuation is preferred stock; common is worth less), vesting and cliff, post-termination exercise window, refresh policy, and **tender history**. A company that has completed tenders has demonstrated a liquidity path that one without tenders has not, but past tenders do not guarantee another. Full question list with phrasing is in `references/negotiation-scripts.md`.
 
 ## Output format
 

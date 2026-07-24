@@ -5,7 +5,7 @@ description: Use when the user wants to tailor a resume to a job description, co
 
 # Resume Tailor
 
-Rewrite resumes to match a specific job description without inventing anything. Two facts drive everything below. First, recruiters spend about 7.4 seconds on the initial scan (Ladders eye-tracking), reading name, current title and company, previous title, dates, and education. Second, the ATS is a searchable database, not a rejection bot: 92% of recruiters say ATS platforms do not auto-reject on formatting or content, and 99% of Fortune 500 companies use one to search and filter. So the job is: make the resume parseable, make the first scan land, and make every line survive a follow-up question.
+Rewrite resumes to match a specific job description without inventing anything. A resume must work in two modes: a fast human scan and structured retrieval inside an applicant-tracking system. Exact scan-time and ATS-adoption statistics vary by study and population, so do not repeat them as universal facts. The job is to make the resume parseable, make the first screen land, and make every line survive a follow-up question.
 
 ## Before starting, collect
 
@@ -26,9 +26,9 @@ List in order of emphasis: hard requirements (named tools, domains; weight what 
 - **Gap**: no evidence. Flag it; never fill it with wording. Gaps are handled in the cover letter or interview, not by lying.
 
 ### Step 3: Rewrite
-- **Design the top third for the 7.4-second scan**: target-matching title language, strongest company or project, domain fit, and proof links must be visible before any dense detail.
+- **Design the top third for a fast scan**: target-matching title language, strongest company or project, domain fit, and proof links must be visible before any dense detail.
 - **Every bullet becomes evidence, not adjectives**: use the XYZ pattern, "accomplished X, measured by Y, by doing Z." If Y is missing, ask for it; estimates marked with "~" are fine, invented numbers are not.
-- **Strip generic AI cadence**: 62% of employers say they are more likely to reject AI-generated resumes that lack personalization, and 78% specifically look for tailored detail. Phrases like "leveraged cutting-edge AI" get cut unless tied to a model, data, eval, or outcome the user actually touched.
+- **Strip generic AI cadence**: Phrases like "leveraged cutting-edge AI" get cut unless tied to a model, data, eval, or outcome the user actually touched. Tailoring must add relevant evidence, not synthetic polish.
 - **Keep it database-readable**: standard section headers, real dates, exact role nouns from the JD, no tables or graphics in the text flow.
 - **For AI roles, surface proof links**: GitHub, papers, demos, launches. Ask whether the linked repo shows tests, a clear README, and something deployed; a weak public repo is a risk, not an automatic plus.
 - Same length or shorter than the original. Tailoring adds relevance, not volume.

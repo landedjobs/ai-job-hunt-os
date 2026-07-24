@@ -6,7 +6,7 @@
 
 <img src="https://static.b100x.ai/github-repos/images/ai-job-hunt-os/banner.svg" alt="AI Job Hunt OS" width="100%">
 
-![Skills](https://img.shields.io/badge/6%20Claude%20skills-ff5b29?style=flat-square) ![Format](https://img.shields.io/badge/Agent%20Skills%20standard-6C2BD9?style=flat-square) ![Data](https://img.shields.io/badge/comp%20data%20from%202%2C176%20postings-00A86B?style=flat-square) [![Stars](https://img.shields.io/github/stars/landedjobs/ai-job-hunt-os?style=social)](https://github.com/landedjobs/ai-job-hunt-os)
+![Skills](https://img.shields.io/badge/6%20Claude%20skills-ff5b29?style=flat-square) ![Format](https://img.shields.io/badge/Agent%20Skills%20standard-6C2BD9?style=flat-square) [![Validate](https://github.com/landedjobs/ai-job-hunt-os/actions/workflows/validate.yml/badge.svg)](https://github.com/landedjobs/ai-job-hunt-os/actions/workflows/validate.yml) [![Stars](https://img.shields.io/github/stars/landedjobs/ai-job-hunt-os?style=social)](https://github.com/landedjobs/ai-job-hunt-os)
 
 **Six Claude skills that run your AI job hunt like an operating system.**
 Decode the JD · research the company · tailor the resume · write outreach that gets replies · drill the interview · negotiate the offer.
@@ -17,7 +17,7 @@ Decode the JD · research the company · tailor the resume · write outreach tha
 
 ---
 
-> Job hunting is a loop, not a lottery: decode what the role wants, prove you match it, reach a human, practice the room, negotiate the number. These skills make Claude run each step properly. Salary benchmarks inside come from the [landed.jobs](https://landed.jobs) database of AI-native job postings, so the numbers are real, not folklore.
+> Job hunting is a loop, not a lottery: decode what the role wants, prove you match it, reach a human, practice the room, negotiate the number. These skills make Claude run each step properly. They deliberately avoid frozen market-wide benchmarks: current compensation and hiring claims must be sourced when the skill runs.
 
 ## What's inside
 
@@ -37,7 +37,7 @@ ai-job-hunt-os/
     ├── mock-interviewer/
     │   └── SKILL.md                   realistic drills with honest scoring
     └── salary-negotiator/
-        └── SKILL.md                   scripts + real comp data from 2,176 AI-native postings
+        └── SKILL.md                   negotiation method + current-data sourcing rules
 ```
 
 <a name="install"></a>
@@ -66,7 +66,7 @@ Then just talk to Claude: "here's a JD, should I apply?" and the right skill kic
 | `resume-tailor` | Rewrites your resume for one specific JD without inventing anything, with a change log that teaches the pattern | Every application that passed the decoder |
 | `cold-outreach-writer` | Three message variants + follow-up plan, under 120 words, payload first | Reaching hiring managers and referrers |
 | `mock-interviewer` | Behavioral, technical AI/ML, or LLM system design sessions with real follow-ups and 1-5 scoring | The week before the loop |
-| `salary-negotiator` | Scripts for every negotiation moment + comp benchmarks by role family from real postings | The screen question, and the day the offer lands |
+| `salary-negotiator` | Scripts for every negotiation moment + a method for sourcing current, comparable compensation | The screen question, and the day the offer lands |
 
 <a name="how-they-chain"></a>
 ## How they chain

@@ -5,7 +5,7 @@ description: Use when the user names a company they are applying or interviewing
 
 # Company Researcher
 
-Produce the brief a well-connected friend would give: what the company actually does, whether it will exist in two years, whether its AI is real, and what to say in the room. Candidates should diligence a startup like a junior investor, because they are investing something a VC never does: years of their one career. Builder.ai raised $500M+ from famous investors, marketed human work as AI, overstated revenue projections by up to 340%, and went insolvent. Famous logos are weak evidence; artifacts are strong evidence.
+Produce the brief a well-connected friend would give: what the company actually does, whether it is financially and operationally credible, whether its AI is real, and what to say in the room. Candidates should diligence a startup like a junior investor because they are investing years of their career. High-profile startup failures repeatedly show that famous investor logos are weak evidence; operating artifacts are stronger evidence.
 
 ## What you need
 
@@ -18,7 +18,7 @@ What they sell, to whom, and what the buyer pays for. If you cannot state it in 
 
 ### Step 2: Survival math (borrow the VC lens)
 - **Runway estimate**: last raise (amount, date) minus elapsed burn. Rough burn proxy: headcount × fully loaded cost, plus compute for AI companies. State it as an estimate with the inputs shown.
-- **Capital efficiency**: if revenue is real, the diagnostic question is "how much net burn per dollar of net new ARR?" (burn multiple; median Series A sits around 1.6x, exceptional teams under 1.0x). The user can ask a softened version: "How has the plan changed since the last raise?"
+- **Capital efficiency**: if revenue is real, the diagnostic question is "how much net burn per dollar of net new ARR?" Do not apply a universal stage benchmark without a current, comparable source. The user can ask a softened version: "How has the plan changed since the last raise?"
 - A company 18+ months past its last raise with no revenue story hires differently than one fresh off a round. Say which pattern this is.
 - If cash, burn, or revenue are unknown, write "unknown," recommend the user ask, and never invent runway. Diligence reduces risk; it does not eliminate private-company opacity.
 
@@ -35,7 +35,7 @@ Also run the **hiring-mix check**: a "frontier infra" company hiring mostly sale
 Recent 6 months: launches, big customers, layoffs, leadership changes. Who leads the org this role sits in; their public writing. Open-roles pattern: a cluster of similar openings means a funded push; a lone re-posted role can mean churn. Check a layoffs tracker before believing a hiring spree.
 
 ### Step 5: Sources and their weights
-Levels.fyi for comp and level comparables (1M+ data points). Blind and Glassdoor for repeated themes only; anonymous sentiment is not fact, and one review is an anecdote. LinkedIn headcount graph for growth and the eng-vs-GTM mix. Engineering blog, GitHub org, changelog, status page for the AI-washing test. Label every claim in the brief: measured, reported, or anecdote.
+Levels.fyi for compensation and level comparables. Blind and Glassdoor for repeated themes only; anonymous sentiment is not fact, and one review is an anecdote. LinkedIn headcount graph for growth and the engineering-vs-GTM mix. Engineering blog, GitHub org, changelog, and status page for the AI-washing test. Label every claim in the brief: measured, reported, or anecdote.
 
 ## Output format
 

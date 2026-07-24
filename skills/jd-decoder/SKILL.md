@@ -5,7 +5,7 @@ description: Use when the user shares a job posting and asks whether to apply, w
 
 # JD Decoder
 
-Treat every posting as a probabilistic signal, not a promise. Two base rates frame the work: Greenhouse classifies 18-22% of postings on its platform in any quarter as ghost jobs (positions not being actively filled), and in a 2024 ResumeBuilder survey 40% of hiring managers admitted their company posted a fake listing that year. Those are different instruments, so never quote them as one number; the takeaway is that most postings are real, a meaningful minority are not, and effort should follow the odds.
+Treat every posting as a probabilistic signal, not a promise. Some listings are stale, evergreen, exploratory, duplicated, or no longer funded, but published estimates are not interchangeable and should not be turned into one universal “ghost job” rate. The practical takeaway is to inspect the specific posting and company, then scale effort to the evidence.
 
 ## Process
 
@@ -33,7 +33,7 @@ Posting-language studies are weak evidence of anything, so convert phrases into 
 - One role asking for research + infra + customer-facing + data + sales engineering → unicorn trap; the role is underscoped in their heads. Generate clarifying questions and lower the tailoring investment.
 
 ### Step 4: Decode the comp band
-A very wide band ($50k+ spread) measurably lowers applicant trust when unexplained (Washington State University study), but the expert move is decoding, not avoiding: does it span multiple levels? Multiple geos? Is the top reachable for external hires? Flag which question applies and queue it for the screen. Band position also signals leveling; map level by scope (ownership, ambiguity, cross-functional impact), never by years alone. Years-of-experience lines are soft; two years shipping production AI regularly beats five adjacent, and you should say when the user should apply anyway.
+A very wide compensation band can hide multiple levels or geographies. The expert move is decoding, not avoiding: does it span multiple levels? Multiple geos? Is the top reachable for external hires? Flag which question applies and queue it for the screen. Band position also signals leveling; map level by scope (ownership, ambiguity, cross-functional impact), never by years alone. Years-of-experience lines are soft; direct production evidence can outweigh longer adjacent experience, and you should say when the user should apply anyway.
 
 ### Step 5: Verdict
 Exactly one of:

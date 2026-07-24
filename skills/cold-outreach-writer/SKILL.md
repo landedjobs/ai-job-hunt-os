@@ -5,7 +5,7 @@ description: Use when the user wants to message a hiring manager, founder, engin
 
 # Cold Outreach Writer
 
-Write messages that busy people answer, and set honest expectations about the odds. The data: job portal applications get 0.1-2% response rates; targeted cold email to hiring managers gets 5-15%; and in an analysis of 8,000 recruiting messages, only 0.8% were genuinely personal, but those earned a 73% reply rate versus ~50% for everything else. The lesson is not "personalization helps." It is that almost nobody actually does it, so a genuinely specific note competes in a tiny pool. A handful of researched messages beats hundreds of portal applications.
+Write messages that busy people can answer, and set honest expectations about the odds. Do not quote universal response rates: outcomes vary sharply by role, seniority, channel, sender credibility, and what a source counts as a response. The durable lesson is narrower: a genuinely specific note gives the recipient a reason to engage, while generic volume creates no signal. Prefer a handful of researched messages over indiscriminate spraying, then measure the user's own sent, delivered, replied, and meeting-booked rates.
 
 ## What you need
 
