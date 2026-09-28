@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<a href="https://landed.jobs"><img src="https://static.b100x.ai/email/landed-wordmark.png" alt="Landed" width="200"></a>
+<a href="https://www.landed.jobs/?utm_source=github&utm_medium=referral&utm_campaign=github-ai-job-hunt-os&utm_content=repo-home"><img src="https://static.b100x.ai/email/landed-wordmark.png" alt="Landed" width="200"></a>
 
 <img src="https://static.b100x.ai/github-repos/images/ai-job-hunt-os/banner.svg" alt="AI Job Hunt OS" width="100%">
 
@@ -11,7 +11,7 @@
 **Six Claude skills that run your AI job hunt like an operating system.**
 Decode the JD · research the company · tailor the resume · write outreach that gets replies · drill the interview · negotiate the offer.
 
-[Install](#install) · [The skills](#the-skills) · [How they chain](#how-they-chain) · [Get jobs weekly](#stay-in-the-loop)
+[Install](#install) · [The skills](#the-skills) · [How they chain](#how-they-chain) · [Stay in the loop](#stay-in-the-loop)
 
 </div>
 
@@ -83,11 +83,13 @@ Each skill picks up the previous one's output, so you never paste the same JD tw
 <a name="stay-in-the-loop"></a>
 ## Stay in the loop
 
-These skills are the manual loop. [landed](https://landed.jobs) is the agent that runs it for you daily: fresh AI-native roles matched to you, application answers drafted, interview prep queued.
+These skills are the manual loop. [landed](https://www.landed.jobs/?utm_source=github&utm_medium=referral&utm_campaign=github-ai-job-hunt-os&utm_content=repo-home) is the agent that runs it for you daily: fresh AI-native roles matched to you, application answers drafted, interview prep queued.
+
+Resume tailoring and cold outreach stay in this repo: they are open-source skills you run yourself in Claude. landed does not rewrite your resume or send outreach for you.
 
 - ⭐ **Star this repo**: new skills get added (interview-question mining, offer comparison, visa-aware search are queued).
-- 📬 **[Weekly digest](https://landed.jobs/community?utm_source=github&utm_medium=readme&utm_campaign=ai-job-hunt-os)**: 15 fresh AI-native roles with comp and remote flags, every Monday.
-- 💬 **[Community](https://landed.jobs/community?utm_source=github&utm_medium=readme&utm_campaign=ai-job-hunt-os)**: job seekers running this exact loop, on Telegram and Slack.
+- 📬 **[Fresh roles](https://www.landed.jobs/jobs?utm_source=github&utm_medium=referral&utm_campaign=github-ai-job-hunt-os&utm_content=jobs)**: every open role landed tracks, by role family, refreshed daily with pay and the companies hiring.
+- 🧰 **[More free tools](https://www.landed.jobs/open-source?utm_source=github&utm_medium=referral&utm_campaign=github-ai-job-hunt-os&utm_content=open-source)**: the other open-source repos landed maintains, from interview questions to portfolio projects.
 
 ## License
 
