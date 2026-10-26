@@ -15,6 +15,13 @@ Decode the JD · research the company · tailor the resume · write outreach tha
 
 </div>
 
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=ai-job-hunt-os&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-ai-job-hunt-os&amp;utm_content=guide-apply">Auto-apply to AI jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
+
 ---
 
 > Job hunting is a loop, not a lottery: decode what the role wants, prove you match it, reach a human, practice the room, negotiate the number. These skills make Claude run each step properly. They deliberately avoid frozen market-wide benchmarks: current compensation and hiring claims must be sourced when the skill runs.
