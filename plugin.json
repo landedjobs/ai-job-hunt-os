@@ -1,0 +1,19 @@
+{
+    "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+    "name": "ai-job-hunt-os",
+    "version": "1.0.0",
+    "description": "Six skills for a job search: read job postings for real requirements, research companies, tailor resumes, draft outreach, run mock interviews, and prepare salary negotiations. Skills: jd-decoder, company-researcher, resume-tailor, cold-outreach-writer, mock-interviewer, salary-negotiator.",
+    "author": {
+        "name": "Landed",
+        "url": "https://landed.jobs"
+    },
+    "homepage": "https://github.com/landedjobs/ai-job-hunt-os",
+    "repository": "https://github.com/landedjobs/ai-job-hunt-os",
+    "license": "MIT",
+    "keywords": [
+        "job-search",
+        "resume",
+        "interview-prep",
+        "career"
+    ]
+}
