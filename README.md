@@ -15,12 +15,6 @@ Decode the JD · research the company · tailor the resume · write outreach tha
 
 </div>
 
-<!-- landed-apply-cta -->
-<table><tr><td>
-<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=ai-job-hunt-os&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-ai-job-hunt-os&amp;utm_content=guide-apply">Auto-apply to AI jobs that match you →</a></b><br>
-Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
-</td></tr></table>
-
 
 ---
 
@@ -74,6 +68,12 @@ Then just talk to Claude: "here's a JD, should I apply?" and the right skill kic
 | `cold-outreach-writer` | Three message variants + follow-up plan, under 120 words, payload first | Reaching hiring managers and referrers |
 | `mock-interviewer` | Behavioral, technical AI/ML, or LLM system design sessions with real follow-ups and 1-5 scoring | The week before the loop |
 | `salary-negotiator` | Scripts for every negotiation moment + a method for sourcing current, comparable compensation | The screen question, and the day the offer lands |
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=ai-job-hunt-os&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-ai-job-hunt-os&amp;utm_content=guide-apply">Auto-apply to AI jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
 
 <a name="how-they-chain"></a>
 ## How they chain
